@@ -1,0 +1,206 @@
+TESTER
+	Postman - Google Chrome
+	
+AUTHORIZATION
+	Basic
+	Username : admin
+	Password : admin
+
+----------------------------------
+			Goods Receipt
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oInventoryGenEntry
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"DocDueDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"01",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4"
+			}
+		]
+	}
+	
+----------------------------------
+			A/R Invoice
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oInvoice
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"DocDueDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"01",
+		"TotalTransaction":"50000",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10",
+			  "Price":"5000",
+			  "DiscountPercent":"2"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4",
+			  "Price":"2500",
+			  "DiscountPercent":"2"
+			}
+		]
+	}
+		
+----------------------------------
+			Purchase Order
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oPurchaseOrders
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"DocDueDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"02",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10",
+			  "Price":"5000"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4",
+			  "Price":"2500"
+			}
+		]
+	}
+	
+----------------------------------
+			GRPO
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oPurchaseDeliveryNotes
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"DocDueDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"02",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10",
+			  "Price":"5000",
+			  "BaseEntry":"11",
+			  "BaseLine":"0"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4",
+			  "Price":"2500",
+			  "BaseEntry":"11",
+			  "BaseLine":"1"
+			}
+		]
+	}
+
+----------------------------------
+			Inventory Transfer
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oStockTransfer
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"02",
+		"FromWarehouseCode":"01",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4"
+			}
+		]
+	}
+		
+----------------------------------
+			Goods Receipt
+----------------------------------
+METHOD
+	POST
+PATH
+	http://116.254.101.106:81/api/oInventoryGenEntry
+BODY
+	Raw - JSON
+	------------------------------
+	{
+		"PrimaryNumberingPOS":"1",
+		"DocumentNumberingPOS":"1",
+		"DocumentDate":"02-07-2017",
+		"DocDueDate":"02-07-2017",
+		"TaxDate":"02-07-2017",
+		"POSOutlet":"01",
+		"lines": [
+			{
+			  "ItemCode": "APNE/CHK-24/15 OZ",
+			  "UomEntry": "5",
+			  "Quantity": "10"
+			},
+			{
+			  "ItemCode": "APNE/CHK-12/580 ML",
+			  "UomEntry": "5",
+			  "Quantity": "4"
+			}
+		]
+	}

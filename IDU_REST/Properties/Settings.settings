@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IDU_REST.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StrDbUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="StrSapB1UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">manager</Value>
+    </Setting>
+    <Setting Name="WSUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="WSPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="StrDbPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">adminpass</Value>
+    </Setting>
+    <Setting Name="StrSapB1Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password</Value>
+    </Setting>
+    <Setting Name="StrDbServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TONY</Value>
+    </Setting>
+    <Setting Name="StrDbName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CEP_LIVE</Value>
+    </Setting>
+    <Setting Name="StrSapB1LicenseServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TONY</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
